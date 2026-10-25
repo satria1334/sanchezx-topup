@@ -3,214 +3,153 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090b16">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SANCHEZX TOPUP</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#090b16;color:#f7f7ff;font-family:Arial,sans-serif}
-header{padding:22px 18px;background:#111426;border-bottom:1px solid #30334e}
-header h1{margin:0;color:#a78bfa;font-size:25px}
-header p{color:#b9bbd1;margin-bottom:0}
-main{max-width:600px;margin:auto;padding:18px}
-.hero{padding:22px;border-radius:18px;background:linear-gradient(135deg,#30205b,#15182e);border:1px solid #514078}
-.hero h2{font-size:27px;margin:8px 0}
-.hero p{line-height:1.6;color:#d4d0e9}
-.label{font-size:13px;color:#b9bbd1;letter-spacing:1px}
-h2.section{font-size:21px;margin-top:26px}
+body{margin:0;background:#080b18;color:white;font-family:Arial,sans-serif}
+header{padding:22px 18px;background:#10152b;border-bottom:1px solid #292f50}
+.logo{font-size:23px;font-weight:bold;color:#a78bfa}
+.logo span{color:white}
+header p{font-size:12px;color:#aab0ce;margin-bottom:0}
+main{max-width:650px;margin:auto;padding:20px 16px}
+.hero{padding:24px 20px;border-radius:20px;background:linear-gradient(135deg,#6339ce,#172b63);margin-bottom:24px}
+.hero small{color:#e0d7ff}
+.hero h1{font-size:29px;margin:12px 0}
+.hero p{font-size:14px;line-height:1.6;color:#eee8ff}
+.section{background:#11162a;border:1px solid #272d49;border-radius:16px;padding:18px;margin-bottom:17px}
+h2{font-size:18px;margin:0 0 15px}
 .games{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.game{padding:15px 8px;background:#15192b;color:white;border:1px solid #373b59;border-radius:13px;font-weight:bold}
-.game.active{border:2px solid #a78bfa;background:#282044}
-.panel{margin-top:18px;padding:17px;background:#14182a;border:1px solid #303550;border-radius:15px}
-label{display:block;margin:15px 0 7px;font-size:14px;color:#d7d8e9}
-input,select{width:100%;padding:13px;background:#090d1b;border:1px solid #393e5b;border-radius:9px;color:white;font-size:15px}
-.products{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
-.product{background:#0d1120;color:white;border:1px solid #383c56;border-radius:11px;padding:13px 8px;text-align:left}
-.product.active{border:2px solid #a78bfa;background:#292044}
-.product strong,.product small{display:block}
-.product small{margin-top:7px;color:#c4b5fd}
-button{cursor:pointer}
-.primary{width:100%;padding:14px;border:0;border-radius:10px;background:#8b5cf6;color:white;font-weight:bold;font-size:15px;margin-top:17px}
-.note{font-size:12px;line-height:1.6;color:#b8bdd2}
-.summary{padding:13px;background:#0b1020;border-radius:10px;line-height:1.9;margin-top:15px;font-size:14px}
-footer{text-align:center;padding:24px;color:#858ba6;font-size:12px}
+.game{background:#1b213b;border:2px solid #303754;color:white;border-radius:12px;padding:15px 8px;font-size:14px;font-weight:bold;cursor:pointer}
+.game.active{border-color:#a78bfa;background:#30245a}
+label{display:block;font-size:13px;color:#c5c9dd;margin:13px 0 7px}
+input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #363c59;background:#090e20;color:white;font-size:15px;outline:none}
+input:focus,select:focus{border-color:#a78bfa}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.product{background:#1b213b;border:2px solid #303754;border-radius:12px;color:white;padding:13px 9px;text-align:left;cursor:pointer}
+.product.active{border-color:#a78bfa;background:#30245a}
+.product strong{display:block;font-size:14px;margin-bottom:7px}
+.product span{color:#c4b5fd;font-size:13px}
+button{font-family:inherit}
+.order{width:100%;border:0;border-radius:12px;padding:15px;background:#8b5cf6;color:white;font-size:16px;font-weight:bold;cursor:pointer;margin-top:15px}
+.order:active{opacity:.8}
+.note{font-size:12px;color:#9ca3bd;line-height:1.6}
+footer{text-align:center;color:#777f9d;font-size:12px;padding:25px}
 </style>
 </head>
 <body>
 <header>
-  <h1>SANCHEZX TOPUP</h1>
-  <p>Top-up game favoritmu dengan mudah.</p>
+  <div class="logo">SANCHEZX <span>TOPUP</span></div>
+  <p>Top up game favoritmu dengan mudah</p>
 </header>
 
 <main>
-  <section class="hero">
-    <div class="label">GAME TOP-UP STORE</div>
-    <h2>Level up permainanmu!</h2>
-    <p>Pilih game, tentukan nominal, lalu kirim pesanan ke admin.</p>
-  </section>
-
-  <h2 class="section">1. Pilih Game</h2>
-  <div class="games">
-    <button class="game active" id="mlBtn" onclick="setGame('ml')">🎮 Mobile Legends</button>
-    <button class="game" id="ffBtn" onclick="setGame('ff')">🔥 Free Fire</button>
+  <div class="hero">
+    <small>⚡ LAYANAN TOP UP GAME</small>
+    <h1>Push Rank, Jangan Push Dompet!</h1>
+    <p>Pilih game, tentukan nominal, lalu kirim pesanan langsung melalui WhatsApp.</p>
   </div>
 
-  <section class="panel">
-    <h3 id="gameTitle">Mobile Legends</h3>
-    <p class="note" id="gameDesc">Masukkan User ID dan Zone ID akunmu.</p>
-
-    <div id="mlFields">
-      <label for="userId">User ID</label>
-      <input id="userId" inputmode="numeric" placeholder="Contoh: 123456789">
-      <label for="zoneId">Zone ID</label>
-      <input id="zoneId" inputmode="numeric" placeholder="Contoh: 1234">
+  <div class="section">
+    <h2>🎮 1. Pilih Game</h2>
+    <div class="games">
+      <button class="game active" onclick="pilihGame('Mobile Legends',this)">💎 Mobile Legends</button>
+      <button class="game" onclick="pilihGame('Free Fire',this)">🔥 Free Fire</button>
     </div>
+  </div>
 
-    <div id="ffFields" hidden>
-      <label for="playerId">Player ID Free Fire</label>
-      <input id="playerId" inputmode="numeric" placeholder="Masukkan Player ID">
-    </div>
+  <div class="section">
+    <h2>🪪 2. Data Pemain</h2>
+    <label id="labelId">User ID</label>
+    <input id="playerId" placeholder="Masukkan User ID">
+    <label id="labelZone">Zone ID</label>
+    <input id="zoneId" placeholder="Masukkan Zone ID">
+  </div>
 
-    <label>2. Pilih Nominal</label>
+  <div class="section">
+    <h2>💎 3. Pilih Nominal</h2>
     <div class="products" id="products"></div>
+  </div>
 
-    <div class="summary" id="summary">
-      Game: Mobile Legends<br>
-      Nominal: Belum dipilih<br>
-      Harga: Belum dipilih
-    </div>
-
-    <label for="buyerName">Nama pemesan (opsional)</label>
-    <input id="buyerName" maxlength="50" placeholder="Nama kamu">
-
-    <button class="primary" onclick="sendOrder()">Pesan melalui WhatsApp</button>
-    <p class="note">Harga di halaman ini masih contoh. Periksa nominal dan harga sebelum memesan. Jangan pernah memberikan kata sandi atau kode OTP akun game.</p>
-  </section>
+  <div class="section">
+    <h2>📋 Ringkasan Pesanan</h2>
+    <p class="note">Game: <strong id="sumGame">Mobile Legends</strong></p>
+    <p class="note">Nominal: <strong id="sumProduct">86 Diamonds</strong></p>
+    <p class="note">Harga contoh: <strong id="sumPrice">Rp20.000</strong></p>
+    <button class="order" onclick="pesan()">Pesan via WhatsApp ↗</button>
+    <p class="note">Harga di bawah masih contoh. Pastikan harga dan nomor WhatsApp admin sudah benar sebelum website dipakai berjualan.</p>
+  </div>
 </main>
 
-<footer>© 2026 SANCHEZX TOPUP</footer>
+<footer>© 2026 SANCHEZX TOPUP · Terima kasih sudah berkunjung</footer>
 
 <script>
-const catalog = {
-  ml: [
-    {name:"86 Diamonds",price:20000},
-    {name:"172 Diamonds",price:39000},
-    {name:"257 Diamonds",price:58000},
-    {name:"344 Diamonds",price:77000},
-    {name:"514 Diamonds",price:115000},
-    {name:"Weekly Pass",price:30000}
-  ],
-  ff: [
-    {name:"70 Diamonds",price:10000},
-    {name:"140 Diamonds",price:20000},
-    {name:"355 Diamonds",price:50000},
-    {name:"720 Diamonds",price:100000},
-    {name:"Membership Mingguan",price:30000},
-    {name:"Membership Bulanan",price:80000}
-  ]
+let game='Mobile Legends';
+let produkDipilih=0;
+const katalog={
+'Mobile Legends':[
+{nama:'86 Diamonds',harga:20000},
+{nama:'172 Diamonds',harga:39000},
+{nama:'257 Diamonds',harga:58000},
+{nama:'344 Diamonds',harga:77000}
+],
+'Free Fire':[
+{nama:'70 Diamonds',harga:10000},
+{nama:'140 Diamonds',harga:20000},
+{nama:'355 Diamonds',harga:49000},
+{nama:'720 Diamonds',harga:95000}
+]
 };
 
-let game = "ml";
-let selected = -1;
-
-function rupiah(n) {
-  return "Rp" + n.toLocaleString("id-ID");
+function rupiah(n){
+ return 'Rp'+n.toLocaleString('id-ID');
 }
 
-function setGame(value) {
-  game = value;
-  selected = -1;
-
-  document.getElementById("mlBtn").classList.toggle("active",game==="ml");
-  document.getElementById("ffBtn").classList.toggle("active",game==="ff");
-  document.getElementById("mlFields").hidden = game!=="ml";
-  document.getElementById("ffFields").hidden = game!=="ff";
-  document.getElementById("gameTitle").textContent =
-    game==="ml" ? "Mobile Legends" : "Free Fire";
-  document.getElementById("gameDesc").textContent =
-    game==="ml" ? "Masukkan User ID dan Zone ID akunmu." :
-    "Masukkan Player ID Free Fire.";
-  renderProducts();
-  updateSummary();
+function tampilProduk(){
+ const daftar=katalog[game];
+ if(produkDipilih>=daftar.length) produkDipilih=0;
+ document.getElementById('products').innerHTML=daftar.map((p,i)=>
+ `<button class="product ${i===produkDipilih?'active':''}" onclick="pilihProduk(${i})"><strong>${p.nama}</strong><span>${rupiah(p.harga)}</span></button>`
+ ).join('');
+ perbaruiRingkasan();
 }
 
-function renderProducts() {
-  const area = document.getElementById("products");
-  area.innerHTML = "";
-
-  catalog[game].forEach((item,index) => {
-    const btn = document.createElement("button");
-    btn.className = "product" + (selected===index ? " active" : "");
-    const name = document.createElement("strong");
-    name.textContent = item.name;
-    const price = document.createElement("small");
-    price.textContent = rupiah(item.price);
-    btn.append(name,price);
-    btn.onclick = () => {
-      selected = index;
-      renderProducts();
-      updateSummary();
-    };
-    area.appendChild(btn);
-  });
+function pilihGame(nama,tombol){
+ game=nama;
+ produkDipilih=0;
+ document.querySelectorAll('.game').forEach(b=>b.classList.remove('active'));
+ tombol.classList.add('active');
+ document.getElementById('labelId').textContent=nama==='Mobile Legends'?'User ID':'Player ID';
+ document.getElementById('playerId').placeholder=nama==='Mobile Legends'?'Masukkan User ID':'Masukkan Player ID';
+ document.getElementById('labelZone').style.display=nama==='Mobile Legends'?'block':'none';
+ document.getElementById('zoneId').style.display=nama==='Mobile Legends'?'block':'none';
+ tampilProduk();
 }
 
-function updateSummary() {
-  const item = catalog[game][selected];
-  document.getElementById("summary").textContent =
-    "Game: " + (game==="ml" ? "Mobile Legends" : "Free Fire") +
-    "\nNominal: " + (item ? item.name : "Belum dipilih") +
-    "\nHarga contoh: " + (item ? rupiah(item.price) : "Belum dipilih");
-  document.getElementById("summary").style.whiteSpace = "pre-line";
+function pilihProduk(i){
+ produkDipilih=i;
+ tampilProduk();
 }
 
-function sendOrder() {
-  if (selected < 0) {
-    alert("Pilih nominal top-up terlebih dahulu.");
-    return;
-  }
-
-  let player;
-  if (game==="ml") {
-    const uid = document.getElementById("userId").value.trim();
-    const zone = document.getElementById("zoneId").value.trim();
-    if (!/^\d+$/.test(uid) || !/^\d+$/.test(zone)) {
-      alert("Isi User ID dan Zone ID dengan angka yang benar.");
-      return;
-    }
-    player = "User ID: " + uid + "\nZone ID: " + zone;
-  } else {
-    const id = document.getElementById("playerId").value.trim();
-    if (!/^\d+$/.test(id)) {
-      alert("Isi Player ID Free Fire dengan angka yang benar.");
-      return;
-    }
-    player = "Player ID: " + id;
-  }
-
-  const item = catalog[game][selected];
-  const name = document.getElementById("buyerName").value.trim() || "-";
-  const message =
-    "Halo admin SANCHEZX TOPUP, saya ingin memesan:\n\n" +
-    "Nama: " + name + "\n" +
-    "Game: " + (game==="ml" ? "Mobile Legends" : "Free Fire") + "\n" +
-    player + "\n" +
-    "Nominal: " + item.name + "\n" +
-    "Harga contoh: " + rupiah(item.price) + "\n\n" +
-    "Mohon konfirmasi harga dan cara pembayaran.";
-
-  // Ganti nomor di bawah dengan nomor WhatsApp admin.
-  const adminNumber = "6281234567890";
-  if (adminNumber === "6281234567890") {
-    alert("Tampilan pesanan siap. Sebelum digunakan, ganti nomor WhatsApp contoh di kode dengan nomor admin kamu.");
-    return;
-  }
-  window.open("https://wa.me/" + adminNumber +
-    "?text=" + encodeURIComponent(message),"_blank");
+function perbaruiRingkasan(){
+ const p=katalog[game][produkDipilih];
+ document.getElementById('sumGame').textContent=game;
+ document.getElementById('sumProduct').textContent=p.nama;
+ document.getElementById('sumPrice').textContent=rupiah(p.harga);
 }
 
-renderProducts();
-updateSummary();
+function pesan(){
+ const id=document.getElementById('playerId').value.trim();
+ const zone=document.getElementById('zoneId').value.trim();
+ if(!id){alert('Isi ID pemain terlebih dahulu!');return;}
+ if(game==='Mobile Legends'&&!zone){alert('Isi Zone ID terlebih dahulu!');return;}
+ const p=katalog[game][produkDipilih];
+ const detail=game==='Mobile Legends'?id+' ('+zone+')':id;
+ const pesan='Halo admin SANCHEZX TOPUP, saya ingin memesan:%0AGame: '+encodeURIComponent(game)+'%0AID Pemain: '+encodeURIComponent(detail)+'%0ANominal: '+encodeURIComponent(p.nama)+'%0AHarga contoh: '+encodeURIComponent(rupiah(p.harga));
+ const nomor='6281234567890';
+ window.open('https://wa.me/'+nomor+'?text='+pesan,'_blank');
+}
+tampilProduk();
 </script>
 </body>
 </html>
