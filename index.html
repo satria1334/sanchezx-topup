@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b16">
+  <title>Sanchezx TopUp</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #090b16;
+      color: white;
+    }
+    header {
+      padding: 22px 18px;
+      background: #111426;
+      border-bottom: 1px solid #292d48;
+    }
+    header h1 { margin: 0; color: #a78bfa; }
+    header p { margin-bottom: 0; color: #b6bad0; }
+    main { padding: 20px 16px; max-width: 650px; margin: auto; }
+    .hero {
+      padding: 24px 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #282052, #12172d);
+      border: 1px solid #45406d;
+    }
+    .hero h2 { margin-top: 0; font-size: 27px; }
+    .hero p { color: #d0cce8; line-height: 1.5; }
+    .tag {
+      color: #c4b5fd;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    .section-title { margin-top: 28px; }
+    .games { display: grid; gap: 12px; }
+    .game {
+      background: #15192b;
+      border: 1px solid #303550;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .game h3 { margin: 0 0 7px; }
+    .game p { color: #b6bad0; font-size: 14px; }
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      padding: 13px;
+      background: #8b5cf6;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:active { opacity: .8; }
+    .notice {
+      margin-top: 20px;
+      padding: 14px;
+      border-radius: 12px;
+      background: #15192b;
+      color: #c3c7dc;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #888da8;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SANCHEZX TOPUP</h1>
+    <p>Top-up game favoritmu dengan mudah.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">GAME TOP-UP STORE</div>
+      <h2>Level up permainanmu!</h2>
+      <p>Pilih game favoritmu. Tampilan toko ini masih versi awal dan belum menerima pembayaran.</p>
+    </section>
+
+    <h2 class="section-title">Pilih Game</h2>
+    <section class="games">
+      <article class="game">
+        <h3>🎮 Mobile Legends</h3>
+        <p>Diamond MLBB</p>
+        <button onclick="pilih('Mobile Legends')">Pilih Game</button>
+      </article>
+      <article class="game">
+        <h3>🔫 Free Fire</h3>
+        <p>Diamond FF</p>
+        <button onclick="pilih('Free Fire')">Pilih Game</button>
+      </article>
+      <article class="game">
+        <h3>⚔️ PUBG Mobile</h3>
+        <p>UC PUBG Mobile</p>
+        <button onclick="pilih('PUBG Mobile')">Pilih Game</button>
+      </article>
+    </section>
+
+    <div class="notice" id="hasil">
+      ℹ️ Pilih game untuk memulai.
+      <br>Harga dan layanan akan ditambahkan pada tahap berikutnya.
+    </div>
+  </main>
+
+  <footer>© 2026 Sanchezx TopUp · Versi awal</footer>
+
+  <script>
+    function pilih(game) {
+      document.getElementById('hasil').textContent =
+        'Kamu memilih ' + game +
+        '. Tahap selanjutnya kita buat pilihan nominal dan ID pemain.';
+    }
+  </script>
+</body>
+</html>
