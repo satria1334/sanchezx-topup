@@ -88,16 +88,17 @@ let game='Mobile Legends';
 let produkDipilih=0;
 const katalog={
 'Mobile Legends':[
-{nama:'86 Diamonds',harga:20000},
-{nama:'172 Diamonds',harga:39000},
-{nama:'257 Diamonds',harga:58000},
-{nama:'344 Diamonds',harga:77000}
+{nama:'86 Diamonds',harga:10000},
+{nama:'172 Diamonds',harga:19000},
+{nama:'257 Diamonds',harga:28000},
+{nama:'344 Diamonds',harga:31000}
 ],
 'Free Fire':[
 {nama:'70 Diamonds',harga:10000},
-{nama:'140 Diamonds',harga:20000},
-{nama:'355 Diamonds',harga:49000},
-{nama:'720 Diamonds',harga:95000}
+{nama:'140 Diamonds',harga:19000},
+{nama:'355 Diamonds',harga:45000},
+{nama:'720 Diamonds',harga:89000},
+{nama:'1000 Diamonds',harga:100000},
 ]
 };
 
@@ -146,7 +147,7 @@ function pesan(){
  const p=katalog[game][produkDipilih];
  const detail=game==='Mobile Legends'?id+' ('+zone+')':id;
  const pesan='Halo admin SANCHEZX TOPUP, saya ingin memesan:%0AGame: '+encodeURIComponent(game)+'%0AID Pemain: '+encodeURIComponent(detail)+'%0ANominal: '+encodeURIComponent(p.nama)+'%0AHarga contoh: '+encodeURIComponent(rupiah(p.harga));
- const nomor='6281234567890';
+ const nomor='6285603088228';
  window.open('https://wa.me/'+nomor+'?text='+pesan,'_blank');
 }
 tampilProduk();
